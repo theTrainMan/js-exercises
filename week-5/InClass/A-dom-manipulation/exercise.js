@@ -15,20 +15,42 @@ Write JavaScript below that logs:
     --> should log a list of nodes with a length of 3
 
 */
+//Task 1.1
+// let pTags = document.querySelectorAll('p');
+// console.log(pTags);
+
+// //Task 1.2 
+// let firstDiv = document.querySelector('div');
+// // alert('Thanks for visiting Bikes for Refugees');
+// console.log('firstDiv', firstDiv);
+
+// //Task 1.3
+// let changeCol = document.getElementById('jumbotron-text');
+// console.log('jumbotron-text', changeCol);
+
+// //Task 1.4
+// let psInPrimary = document.querySelectorAll('.primary-content p');
+// console.log('ps In Primary', psInPrimary);
 
 
 /*
 Task 2
 ======
-
 When a user clicks the 'ALERT' button, an alert box should pop up with the text "Thanks for visiting Bikes for Refugees!"
 */
+
+const alertButton = document.getElementById('alertBtn');
+
+function changeAlert() {
+    alert('Thanks for visiting Bikes for Refugees!')
+}
+
+alertButton.addEventListener('click', changeAlert)
 
 
 /*
 Task 3
 =======
-
 Write JavaScript below that changes the background colour of the page when the 'Change colour' button is clicked.
 */
 
@@ -36,15 +58,12 @@ Write JavaScript below that changes the background colour of the page when the '
 /*
 Task 4
 ======
-
 When a user clicks the 'Add some text' button, a new paragraph should be added below the buttons that says "Read more below."
 */
-
 
 
 /*
 Task 5
 ======
-
 When the 'Larger links!' button is clicked, the text of all links on the page should increase.
 */
