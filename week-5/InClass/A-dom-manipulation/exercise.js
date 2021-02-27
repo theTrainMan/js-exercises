@@ -61,9 +61,20 @@ Task 4
 When a user clicks the 'Add some text' button, a new paragraph should be added below the buttons that says "Read more below."
 */
 
+const addSomeTextBtn = document.getElementById('addTextBtn');
+
+addSomeTextBtn.addEventListener('click', () => {
+    let newParaElement = document.createElement('p');
+    newParaElement.innerText = 'This lives under the button paragraph tag';
+
+    let learnMoreHeading = document.querySelector('.heading-underline');
+    learnMoreHeading.appendChild(newParaElement);
+})
+
 
 /*
 Task 5
 ======
 When the 'Larger links!' button is clicked, the text of all links on the page should increase.
 */
+
